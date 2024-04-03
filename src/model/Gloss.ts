@@ -4,8 +4,8 @@ export class Gloss extends Produto {
 
     private _essencia: string;  
 
-	constructor(essencia: string, id: number, nome: string, tipo: number, preco: number) {
-        super(id, nome, tipo, preco) 
+	constructor(id: number, nome: string, marca: string, tipo: number, preco: number, essencia: string) {
+        super(id, nome, marca, tipo, preco) 
 		this._essencia = essencia;
 	}
 
@@ -20,6 +20,6 @@ export class Gloss extends Produto {
 
     public visualizar(): void {
         super.visualizar();
-        console.log(`Essencia: ${this._essencia}`);  
+		console.log(`                 Essencia do ${this.nome}: ${this._essencia}`) 
     }
 }

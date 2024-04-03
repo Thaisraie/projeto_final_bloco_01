@@ -4,8 +4,8 @@ export class Batom extends Produto {
 
     private _cor: string;
 
-    constructor(cor: string, id: number, nome: string, tipo: number, preco: number) {
-        super(id, nome, tipo, preco) 
+    constructor(id: number, nome: string, marca: string, tipo: number, preco: number, cor: string) {
+        super(id, nome, marca, tipo, preco) 
 		this._cor = cor;
 	}
 
@@ -19,6 +19,6 @@ export class Batom extends Produto {
 
     public visualizar(): void {
         super.visualizar();
-        console.log(`Cor: ${this._cor}`);
+		console.log(`                 Cor do ${this.nome}: ${this._cor}`)
     }
 }
