@@ -19,15 +19,15 @@ export function main() {
         console.log("            5 - Deletar Produto                      ");
         console.log("            0 - Sair                                 ");
         console.log("                                                     ");
-        console.log("*****************************************************");
+        console.log("✦—————————————————————————————————————————————————————✦");
         console.log("                                                     ");
 
         console.log("Entre com a opção desejada: ");
         opcao = readlinesync.questionInt("");
 
         if (opcao == 0) {
-            console.log("\n*****************************************************");
-            console.log("\n     Obrigado(a) pela preferência, Volte sempre! ♥");
+            console.log("✦—————————————————————————————————————————————————————✦");
+            console.log("\n    Obrigado(a) pela preferência, Volte sempre! ♥");
             sobre();
             process.exit(0);
         }
@@ -65,11 +65,13 @@ export function main() {
 
 
 function sobre(): void {
-    console.log("\n*****************************************************");
-    console.log("\nProjeto Desenvolvido por:");
-    console.log("\nThais Siqueira, contato no link abaixo:");
-    console.log("https://www.linkedin.com/in/thaisqusi/");
-    console.log("\n*****************************************************");
+    console.log("\n");
+    console.log("✦—————————————— Projeto Desenvolvido por: ——————————————✦");
+    console.log("\n");
+    console.log("           Thais Siqueira, contato no link abaixo:       ");
+    console.log("          https://www.linkedin.com/in/thaisqusi/");
+    console.log("\n");
+    console.log("✦———————————————————————————————————————————————————————✦");
 }
 
 function keyPress(): void {
